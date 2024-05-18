@@ -3,9 +3,9 @@
 
 
   body {
-    background-image: url(/TesteJavaScript/imgs/teste.png);
+    background-image: url(/TesteJavaScript/imgs/colori.png); 
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
 
   a {
@@ -24,7 +24,7 @@
     cursor: pointer;
     text-transform: uppercase;
     background-color: #fff;
-    border: 4px solid rgba(22, 76, 167, 0.6);
+    border: 4px solid #8942E0; 
     border-radius: 10px;
     color: #1d89ff;
     font-weight: 400;
@@ -51,7 +51,7 @@
     cursor: pointer;
     text-transform: uppercase;
     background-color: #fff;
-    border: 4px solid rgba(22, 76, 167, 0.6);
+    border: 4px solid #8942E0; 
     border-radius: 10px;
     color: #1d89ff;
     font-weight: 400;
@@ -67,7 +67,7 @@
   }
 
   button span {
-    color: #164ca7;
+    color: #164ca7; 
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.7px;
@@ -137,7 +137,7 @@
   }
 
   .btn-shine:after {
-    background: #05bcf3;
+    background: #FC2D60;
     content: "";
     height: 155px;
     left: -75px;
