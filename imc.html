@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/TesteJavaScript/imc.css"> 
+    <title>Sua calculadora para tudo</title>
+    
+</head>
+<body>
+    <form id="forms" class="form">
+        <p class="heading">CALCULAR IMC</p> 
+        <input id="peso" class="input" placeholder="PESO" type="text">
+        <input id="altura" class="input" placeholder="ALTURA" type="text"> 
+        <button id="calcular" class="btn">CALCULAR</button>  
+    </form>
+
+    <div id="calculo">  
+        <strong> <p id="texto"> </p> </strong>
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Obesidade (grau)</th>
+            </tr>
+            <tr>
+                <td>Menos de 18,5</td>
+                <td>Magreza</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>18,5 - 24,9</td>
+                <td>Normal</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>25,0 - 29,9</td>
+                <td>Sobrepeso</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>30,0 - 39,9</td>
+                <td>Obesidade</td>
+                <td>II</td>
+            </tr>
+            <tr>
+                <td>40,0 ou mais</td>
+                <td>Obesidade grave</td>
+                <td>III</td>
+            </tr>
+        </table>
+        <button id="voltar" class="voltar">CALCULAR DE NOVO</button>  
+    </div>
+
+    <script>
+       
+       
+       document.getElementById('calcular').addEventListener('click', function(e) { 
+        e.preventDefault(); 
+
+        var peso1 = document.getElementById('peso'); 
+        var peso = parseInt(peso1.value); 
+
+        var altura1 = document.getElementById('altura'); 
+        var altura = parseFloat(altura1.value); 
+
+      
+    
+
+        if (isNaN(peso) || isNaN(altura)) {  //isNaN() é usado para verificar se peso ou altura não são números válidos 
+            alert("Por favor, insira valores válidos para peso e altura");
+            return; 
+        }
+
+        else {
+
+            
+        total = peso/(altura*altura); 
+        var text = document.getElementById('texto'); 
+        text.innerHTML = "<p>Seu IMC é de " + total.toFixed(1) + "</p>"; 
+
+
+        
+        var calc = document.getElementById('calculo'); 
+        calc.style.display = "block"; // Torna a div visível
+
+        }
+     
+
+      
+
+
+             
+            
+        }); 
+
+        document.getElementById('voltar').addEventListener('click', function() {
+        
+        location.reload(); // Atualiza a página
+
+
+        });
+
+    </script>
+
+
+</body>
+</html>

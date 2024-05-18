@@ -2,11 +2,14 @@
 
 
 
-  body {
-    background-image: url(/TesteJavaScript/imgs/colori.png); 
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  .teste {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
 
   a {
     text-decoration: none;
@@ -153,6 +156,86 @@
   .btn-shine:hover:after {
     left: 120%;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+
+ .teste {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+  a {
+    text-decoration: none;
+  }
+
+  #but1 {
+    position: relative;
+    margin: 0;
+    padding: 17px 35px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 4px solid #8942E0; 
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    width: 50%;
+    height: 70px;
+    margin-left: 90px;
+    margin-top: 200px; 
+
+  }
+
+  #but2 {
+    position: relative;
+    margin: 0;
+    padding: 17px 35px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 4px solid #8942E0; 
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    width: 50%;
+    height: 70px;
+    margin-left: 90px;
+    margin-top: 50px;
+
+  }
+
+  button span {
+    color: #164ca7; 
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
   }
 
 }
