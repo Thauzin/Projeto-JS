@@ -5,10 +5,12 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/TesteJavaScript/imgs/colori.png);
+    background-image: url(/Projeto-JS/imgs/colori.png); 
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 .form { 
     position: absolute;
